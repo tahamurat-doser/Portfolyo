@@ -11,6 +11,7 @@ font-family: 'Victor Mono', monospace; */
   box-sizing: border-box;
   font-family: "Comfortaa", sans-serif;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 :root {
   --bg-color: #212a34;
@@ -32,6 +33,12 @@ body a {
   align-items: center;
   padding: 2rem 5rem;
   flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: var(--bg-color);
 }
 
 .logo {
@@ -65,15 +72,17 @@ section {
   justify-content: center;
   align-items: center;
   gap: 5rem;
+  flex-wrap: wrap;
 }
 .home-content {
  /*  border: 2px solid red; */
   width: 70%;
+  
 
 }
 .home-img {
  /*  border: 2px solid red; */
-  width: 30%;
+  width: 20%;
 }
 .home-img img{
     width: 100%;
@@ -96,7 +105,7 @@ section {
 .info{
     margin-top: 2rem;
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 .social-media{
 /* border: 2px solid red; */
@@ -128,4 +137,77 @@ border-radius: 50%;
     box-shadow: 0 0 3rem var(--main-color);
     color: var(--second-bg-color);
     letter-spacing: 0.5rem;
+}
+.about{
+/* border: 2px solid red; */
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+background-color: var(--second-bg-color);
+/* flex-wrap: wrap; */
+}
+.about-img{
+ /*  border: 2px solid rgb(238, 255, 0); */
+  width: 35%;
+}
+.about-content{
+  /* border: 2px solid rgb(0, 26, 255); */
+  width: 65%;
+}
+.about-img img{
+  width: 100%;
+  max-width: 70rem;
+  border-radius: 10%;
+  margin-top: 1rem;
+}
+.heading{
+text-align: center;
+font-size: 4.5rem;
+}
+.about-content h3{
+font-size: 3rem;
+}
+
+.about-content p{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 2.3rem;
+  margin: 3rem 0;
+}
+span{
+color: var(--main-color);
+}
+.skills{
+  border: 3px solid red;
+padding-top: 7rem;
+padding-bottom: 6rem;
+/* display: flex;
+justify-content: center;
+align-items: center; */
+}
+.skills .heading{
+  border: 2px solid blue;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+}
+.skills-container{
+  border: 2px solid yellow;
+  padding: 2rem;
+  font-size: 1.5rem;
+
+}
+.skills-box{
+width: 20rem;
+height: 20rem;
+background-color: var(--second-bg-color);
+margin: 1rem;
+text-align: center;
+box-shadow: 0 0 3rem var(--main-color);
+border-radius: 1rem;
+overflow: hidden;
+}
+.skills-box img{
+width: 100%;
+height: 90%;
 }
