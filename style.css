@@ -26,8 +26,14 @@ body {
 body a {
   color: var(--text-color);
 }
+.container {
+  /*  border: 4px solid rgb(36, 128, 0); */
+  width: 100vw;
+  height: 100vh;
+  padding: 5rem;
+}
 .header {
-  /* border: 2px solid red; */
+  /*  border: 2px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -137,50 +143,35 @@ section {
 }
 .about {
   /* border: 2px solid red; */
- /*  display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem; */
+  gap: 20px;
   background-color: var(--second-bg-color);
-  /* flex-wrap: wrap; */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-
+  flex-wrap: wrap;
 }
 .about-img {
- /*  border: 2px solid rgb(238, 255, 0); */
- /*  width: 25%;
-  width: 30rem;
-  height: 30rem; */
- grid-column-start: 1 ;
- grid-column-end: 2 ;
- grid-row-start:2 ;
- grid-row-end: 4;
- margin-right: 1.5rem;
+  /*  border: 2px solid rgb(238, 255, 0); */
 
-  
+  width: 30%;
 }
 .about-content {
-  /* border: 2px solid rgb(0, 26, 255); */
- /*  width: 75%; */
- grid-column-start: 2 ;
- grid-column-end: 5 ;
- grid-row-start:2 ;
- grid-row-end: 5;
+  /*  border: 2px solid rgb(0, 26, 255); */
+  width: 60%;
 }
 .about-content h3 {
- /*  margin-top: 1rem; */
+  /*  border: 2px solid rgb(0, 26, 255); */
+  /*  margin-top: 1rem; */
 }
 .about-content h2 {
+  /*  border: 2px solid rgb(0, 26, 255); */
   text-align: left;
 }
 .about-img img {
-  width: 100%;
-  max-width: 70rem;
+  /* max-width: 70rem; */
   border-radius: 10%;
   margin-top: 1rem;
-  /* flex: 1 1 100rem; */
+
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -254,8 +245,45 @@ align-items: center; */
   transform: scale(1.05);
   box-shadow: 0 0 4rem white;
 }
-.about-content p:hover {
+/* .about-content p:hover {
   font-size: 3rem;
+} */
+@media screen and (max-width: 1580px) {
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    flex-wrap: wrap;
+  }
+  .about-img {
+    /*  border: 2px solid rgb(238, 255, 0); */
+
+    width: 30rem;
+  }
+  .about-content {
+    /*  border: 2px solid rgb(0, 26, 255); */
+    width: 40%;
+  }
+  .social-media a {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 4rem 1rem;
+  }
+  .btn {
+    padding: 0.5rem 1.5rem;
+
+    letter-spacing: 0.5rem;
+  }
 }
-@media screen and () {
+@media screen and (max-width: 1280px) {
+  .header {
+    position: static;
+  }
+}
+@media screen and (max-width: 920px) {
+  
 }
